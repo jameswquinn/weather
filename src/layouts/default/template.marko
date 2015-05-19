@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en" class="${data.htmlClassName}">
+    <head>
+        <meta charset="UTF-8">
+        <title>
+            <layout-placeholder name="title"/> | Marko Weather
+        </title>
+        <lasso-head/>
+    </head>
+    <body>
+        <app-header/>
+
+        <div id="content">
+            <main id="main">
+                <layout-placeholder name="body"/>
+            </main>
+        </div>
+
+        <app-footer/>
+
+        <lasso-body/>
+
+        <init-widgets/>
+
+        <browser-refresh enabled="true"/>
+    </body>
+</html>

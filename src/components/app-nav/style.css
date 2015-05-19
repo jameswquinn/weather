@@ -1,0 +1,40 @@
+#nav {
+    position: relative;
+    padding: 0;
+    font-size: 1em;
+    height: 38px;
+    line-height: 1.1em;
+    background-color: rgba(0,0,0,.7);
+    color: #fff;
+}
+
+#nav a {
+    color: #fff;
+    font-weight: normal;
+}
+
+#nav a:hover {
+    color:#C6541F;
+    text-decoration: none;
+}
+
+#nav ul {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    overflow: hidden;
+    display: block;
+}
+
+#nav ul li {
+    list-style-image: none;
+    list-style-type: none;
+    margin-left: 0;
+    white-space: nowrap;
+    display: inline;
+    float: left;
+    padding-left: 0.6em;
+    padding-right: 0.6em;
+    line-height: 38px;
+    vertical-align: middle;
+}

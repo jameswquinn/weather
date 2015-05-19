@@ -1,0 +1,8 @@
+{
+    "dependencies": [
+        "require marko-widgets",
+        "require ./widget",
+        "style.css",
+        "../app-choose-location"
+    ]
+}

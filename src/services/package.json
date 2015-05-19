@@ -1,0 +1,5 @@
+{
+    "browser": {
+        "./weather.js": "./weather-browser.js"
+    }
+}

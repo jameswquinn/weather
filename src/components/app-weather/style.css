@@ -1,0 +1,13 @@
+.weather-container {
+    display: none;
+}
+
+.loading {
+    margin-top: 1em;
+    margin-bottom: 1em;
+    display: none;
+}
+
+.weather .panel {
+
+}

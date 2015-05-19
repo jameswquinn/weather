@@ -1,0 +1,43 @@
+{
+  "name": "weather",
+  "version": "0.0.0",
+  "description": "Sample Express-based server app that integrates various RaptorJS modules (including marko, lasso and marko-widgets)",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/raptorjs/raptor-samples.git"
+  },
+  "author": "Patrick Steele-idem <pnidem@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/raptorjs/raptor-samples/issues"
+  },
+  "homepage": "https://github.com/raptorjs/raptor-samples",
+  "dependencies": {
+    "async-config": "^1.0.0",
+    "bootstrap": "https://github.com/twbs/bootstrap/tarball/v3.1.1",
+    "browser-refresh-taglib": "^1.0.0",
+    "compression": "^1.0.11",
+    "express": "^4.8.3",
+    "jquery": "^2.1.1",
+    "lasso": "^1.0.0",
+    "lasso-less": "^2.0.6",
+    "lasso-marko": "^2.0.3",
+    "less": "^1.7.1",
+    "marko": "^2.4.1",
+    "marko-sample-components": "^1.0.0",
+    "marko-widgets": "^4",
+    "minimatch": "^0.2.14",
+    "raptor-args": "^1.0.0",
+    "request": "^2.36.0",
+    "serve-static": "^1.5.1",
+    "temp-units-conv": "^0.1.1",
+    "xml2js": "^0.4.4"
+  },
+  "private": true,
+  "devDependencies": {}
+}

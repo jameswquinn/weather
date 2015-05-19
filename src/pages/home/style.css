@@ -1,0 +1,12 @@
+#query {
+    width: 200px;
+}
+
+.bg-img-01 {
+    /* Image source: https://www.flickr.com/photos/theaucitron/5810163712/in/photolist-5DGx5-84o2ER-mKcgy-cbzyB5-9RqBfq-4PVqwm-9zbjDz-7oFYrc-7u8sVQ-4HJt6j-5UBE7N-4AwK89-8uz6tB-bY1ubY-6Xw3Mq-9XYN5J-i7XW1i-ehyhPC-dmjSdA-9j5kfi-4nXfwv-csMQXb-hkLuPi-4X7Xnr-ddKQr2-4CDhVS-gfhJ8h-5dwpfz-dX4t9G-4F9W4c-8esaXa-7oFYoX-9RQkdN-6Xw3vL-dsNv2H-UZyTh-fKWAni-ehX2vC-7oFU8a-yqcg-35YkUG-e2A3tH-ePFL6-4nvqBz-2CP9P-abA2T4-f87mbf-aEheUm-bDevbz-fNMEHR */
+    background: url(bg-01.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}

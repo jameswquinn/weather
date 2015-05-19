@@ -1,0 +1,8 @@
+<h3 class="location">Weather for $data.location</h3>
+<div if="data.invalidLocation" class="alert alert-warning">
+    Invalid Location
+</div>
+<div class="weather-panel" else>
+    <h4>Current Conditions</h4>
+    <app-current-conditions weather-data="data.weatherData"/>
+</div>
