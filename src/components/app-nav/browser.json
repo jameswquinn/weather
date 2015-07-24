@@ -1,6 +1,5 @@
 {
     "dependencies": [
-        "../app-nav/browser.json",
         "./style.css"
     ]
 }
