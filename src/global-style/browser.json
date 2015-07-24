@@ -1,6 +1,6 @@
 {
     "dependencies": [
         "../third-party/bootstrap/browser.json",
-        "global.css"
+        "./global.css"
     ]
 }

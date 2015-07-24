@@ -1,4 +1,4 @@
-var template = require('marko').load(require.resolve('./template.marko'));
+var template = require('marko').load(require('./template.marko'));
 var weatherService = require('../../services/weather');
 
 module.exports = function(req, res) {

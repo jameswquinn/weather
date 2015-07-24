@@ -1,9 +1,13 @@
+require('marko/node-require').install();
+require('marko/browser-refresh').enable();
+require('lasso/browser-refresh').enable('*.marko *.css *.less');
+require('lasso/node-require-no-op').enable('.less', '.css');
+
 var express = require('express');
 var compression = require('compression');
 var serveStatic = require('serve-static');
 
-require('marko/browser-refresh').enable();
-require('lasso/browser-refresh').enable('*.marko *.css *.less');
+
 
 require('./config').onConfigured(function(err, config) {
     if (err) {

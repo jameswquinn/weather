@@ -2,12 +2,8 @@
     "dependencies": [
         "require: jquery",
         "../../global-style/browser.json",
-        "../../components/app-weather/browser.json",
-        "../../components/app-header/browser.json",
-        "../../components/app-nav/browser.json",
-        "../../components/app-footer/browser.json",
+        "../../components/app/browser.json",
         "../../layouts/default/browser.json",
-        "style.css",
-        "require: marko-sample-components"
+        "./style.css"
     ]
 }

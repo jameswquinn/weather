@@ -1,0 +1,9 @@
+<div w-bind class="weather">
+    <app-choose-location w-id="chooseLocation" />
+
+    <progress w-id="loading" class="loading">Loading...</progress>
+
+    <div w-id="weatherContainer" class="weather-container" style="{?data.weatherData;display:block}">
+        <app-location-weather weather-data="data.weatherData" if="data.weatherData" />
+    </div>
+</div>

@@ -1,32 +1,33 @@
+require('./style.css');
+
 var weatherService = require('../../services/weather');
 var locationWeather = require('../app-location-weather');
 
-function Widget() {
-    var chooseLocation = this.getWidget('chooseLocation');
-    var _this = this;
+module.exports = require('marko-widgets').defineComponent({
+    template: require('./template.marko'),
+    init: function() {
+        var chooseLocation = this.getWidget('chooseLocation');
+        var _this = this;
 
-    this.subscribeTo(chooseLocation)
-        .on('locationSelected', function(location) {
-            _this.showWeatherForLocation(location);
+        this.subscribeTo(chooseLocation)
+            .on('locationSelected', function(location) {
+                _this.showWeatherForLocation(location);
+
+            });
+
+        window.addEventListener('popstate', function(event) {
+            var state = event.state;
+            if (state) {
+                if (state.type === 'weatherLocation') {
+                    _this.showWeatherForLocation(state, false);
+                }
+            } else {
+                _this.hideWeather();
+            }
 
         });
+    },
 
-    window.addEventListener('popstate', function(event) {
-        var state = event.state;
-        if (state) {
-            if (state.type === 'weatherLocation') {
-                _this.showWeatherForLocation(state, false);
-            }
-        } else {
-            _this.hideWeather();
-        }
-
-    });
-}
-
-
-
-Widget.prototype = {
     hideWeather: function() {
         var $weatherContainer = this.$('#weatherContainer');
         $weatherContainer.hide();
@@ -64,8 +65,4 @@ Widget.prototype = {
             $weatherContainer.show();
         });
     }
-};
-
-
-
-exports.Widget = Widget;
+});

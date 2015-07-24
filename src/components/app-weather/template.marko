@@ -1,9 +1,0 @@
-<div w-bind="./widget" w-config="{hello: 'world'}" class="weather">
-    <app-choose-location w-id="chooseLocation" />
-
-    <progress w-el-id="loading" class="loading">Loading...</progress>
-
-    <div w-el-id="weatherContainer" class="weather-container" style="{?data.weatherData;display:block}">
-        <app-location-weather weather-data="data.weatherData" if="data.weatherData" />
-    </div>
-</div>

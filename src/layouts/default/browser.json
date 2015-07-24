@@ -1,5 +1,7 @@
 {
     "dependencies": [
-        "style.css"
+        "../../components/app-header/browser.json",
+        "../../components/app-footer/browser.json",
+        "./style.css"
     ]
 }
